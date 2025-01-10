@@ -1,0 +1,364 @@
+body {
+  font-family: 'Poppins', sans-serif !important;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+.gradient-bg {
+  background: linear-gradient(45deg, #6a82fb, #fc5c7d);
+  height: 100vh;
+  color: white;
+  border-radius: 10px;
+}
+
+.display-3 {
+  font-family: 'Exo 2', sans-serif;
+  font-size: 3.2rem;
+  font-weight: 800;
+  color: #063e20;
+  text-align: center;
+  text-transform: lowercase;
+  letter-spacing: 1px;
+  padding: 20px 0;
+  background-clip: text;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  border-radius: 15px;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  z-index: 1050;
+  background-color: #8d0c0c;
+  width: 200px;
+  max-width: 100%;
+  padding: 10px;
+  margin: 0;
+  overflow-y: auto;
+  border-radius: 5px;
+}
+
+.dropdown-menu a {
+  color: #3d3a3a;
+  text-decoration: none;
+  display: block;
+  padding: 8px 12px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.dropdown-menu a:hover {
+  color: #530606;
+  color: #432828;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+
+  background-color: #7d8597;
+}
+
+.display-3:hover {
+  transform: scale(1.05);
+}
+
+nav {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.btn-custom {
+  background-color: #6200ea;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+  background-color: #3700b3;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  color: #f0f0f0;
+}
+
+.btn-custom:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(98, 0, 234, 0.5);
+}
+
+.lead {
+  font-size: 1.25rem;
+  color: #4b7eb1;
+  font-weight: 600;
+  line-height: 1.5;
+  padding: 15px;
+  background: linear-gradient(90deg, #ffb3c1, #a4c8e1);
+  border-left: 5px solid #3498db;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease, box-shadow 0.3s ease;
+}
+
+.lead:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+section {
+  padding: 4rem 0;
+}
+
+.about {
+  background-color: #1e293b;
+  color: white;
+  padding: 50px;
+  border-radius: 10px;
+}
+
+.project-card {
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+.bg-color {
+  background-color: #e0f7fa;
+  color: #1e293b;
+}
+
+footer {
+  background-color: #192032;
+  color: white;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.contact-section {
+  padding: 50px 0;
+  background-color: #3c5268;
+}
+
+.btn-outline-danger:hover,
+.btn-outline-primary:hover,
+.btn-outline-dark:hover,
+.btn-outline-secondary:hover,
+.btn-outline-info:hover {
+  color: #fff;
+}
+
+.btn-outline-danger:hover {
+  background-color: #e74c3c;
+}
+
+.btn-outline-primary:hover {
+  background-color: #0077b5;
+}
+
+.btn-outline-dark:hover {
+  background-color: #333;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #12100e;
+}
+
+.btn-outline-info:hover {
+  background-color: #1da1f2;
+}
+
+.bg-resume {
+  background-color: #f9fafb;
+  padding: 50px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  margin-bottom: 50px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-center h2 {
+  color: #282829;
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+
+.text-center p {
+  color: #7f8c8d;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.resume-iframe {
+  border: none;
+  border-radius: 8px;
+  margin-top: 20px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  height: 700px;
+}
+
+.resume-download-btn {
+  background-color: #0d5412;
+  color: rgb(8, 111, 20);
+  padding: 15px 30px;
+  border: none;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.resume-download-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.resume-download-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(98, 0, 234, 0.5);
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.skills-badges span {
+  display: inline-block;
+  background-color: #bde0fe;
+  color: #2c3e50;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 50px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+  font-size: 14px;
+}
+
+.skills-badges span:hover {
+  background-color: #3498db;
+  color: #fff;
+}
+
+.resume-header {
+  background-color: #3498db;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px 8px 0 0;
+}
+
+.resume-header h1 {
+  font-size: 28px;
+  margin: 0;
+  font-weight: bold;
+}
+
+.resume-header p {
+  font-size: 16px;
+  margin: 5px 0 0;
+}
+
+.resume-section {
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+  background-color: #bde0fe;
+}
+
+.resume-section:last-child {
+  border-bottom: none;
+}
+
+.resume-section h2 {
+  color: #2c3e50;
+  font-size: 22px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.resume-section p {
+  color: #7f8c8d;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.resume-item {
+  margin-bottom: 20px;
+}
+
+.resume-item h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #34495e;
+}
+
+.resume-item span {
+  display: block;
+  font-size: 14px;
+  color: #95a5a6;
+  margin-bottom: 5px;
+}
+
+.resume-item p {
+  font-size: 15px;
+  color: #2c3e50;
+}
+
+.skill-badges {
+  margin-top: 20px;
+  background-color: #0077b5;
+}
+
+.skill-badges span {
+  background-color: #0077b5;
+  color: #2c3e50;
+  padding: 10px 15px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  display: inline-block;
+  border-radius: 50px;
+  font-weight: 500;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.skill-badges span:hover {
+  background-color: #3498db;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .resume-iframe {
+    height: 500px;
+  }
+
+  .bg-resume {
+    padding: 30px;
+  }
+
+  .resume-download-btn {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}
