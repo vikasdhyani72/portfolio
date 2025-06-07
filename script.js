@@ -26,4 +26,14 @@ document.addEventListener('DOMContentLoaded', function () {
       })
     }
   })
+
+  const navToggler = document.querySelector('.nav-toggler')
+  const navMenu = document.querySelector('.nav-menu')
+
+  navToggler.addEventListener('click', function () {
+    const expanded =
+      navToggler.getAttribute('aria-expanded') === 'true' || false
+    navToggler.setAttribute('aria-expanded', !expanded)
+    navMenu.classList.toggle('show')
+  })
 })
