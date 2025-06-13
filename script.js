@@ -1,39 +1,13 @@
-document.addEventListener('DOMContentLoaded', function () {
-  const dropdowns = document.querySelectorAll('.dropdown')
+const navToggler = document.querySelector('.nav-toggler')
+const navMenu = document.querySelector('#nav-menu')
+const dropdownToggle = document.querySelector('#dropdownToggle')
+const dropdownItem = document.querySelector('.dropdown')
 
-  dropdowns.forEach((dropdown) => {
-    const toggleButton = dropdown.querySelector('.dropdown-toggle')
+navToggler.addEventListener('click', () => {
+  navMenu.classList.toggle('show')
+})
 
-    toggleButton.addEventListener('click', function (event) {
-      event.preventDefault()
-      const dropdownMenu = dropdown.querySelector('.dropdown-menu')
-      dropdownMenu.classList.toggle('show')
-
-      dropdowns.forEach((otherDropdown) => {
-        if (otherDropdown !== dropdown) {
-          const otherMenu = otherDropdown.querySelector('.dropdown-menu')
-          otherMenu.classList.remove('show')
-        }
-      })
-    })
-  })
-
-  document.addEventListener('click', function (event) {
-    if (!event.target.closest('.dropdown')) {
-      dropdowns.forEach((dropdown) => {
-        const dropdownMenu = dropdown.querySelector('.dropdown-menu')
-        dropdownMenu.classList.remove('show')
-      })
-    }
-  })
-
-  const navToggler = document.querySelector('.nav-toggler')
-  const navMenu = document.querySelector('.nav-menu')
-
-  navToggler.addEventListener('click', function () {
-    const expanded =
-      navToggler.getAttribute('aria-expanded') === 'true' || false
-    navToggler.setAttribute('aria-expanded', !expanded)
-    navMenu.classList.toggle('show')
-  })
+dropdownToggle.addEventListener('click', (e) => {
+  e.preventDefault()
+  dropdownItem.classList.toggle('active')
 })
